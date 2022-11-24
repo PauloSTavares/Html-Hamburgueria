@@ -1,21 +1,83 @@
 body {
     font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif;
-    line-height: 1.6;
     margin: 0;
 }
 
 header {
     background-color: #f2f2f2;
     padding: 25px 50px;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+	
+img{
+	width: 100%;
+    height: auto;
 }
 
-    header img {
-        width: 20%;
-        height: 20%;
-        margin-top: 10px;
-        float: left;
-    }
+nav li{
+	display: table-cell;
+}
 
-    header h1 {
-        vertical-align: middle;
-    }
+nav li *{
+	padding-left: 15px;
+    padding-right: 15px;
+}
+
+h1{
+    margin: 0;
+    /*teste*/
+    text-align: center;
+    margin-bottom: 5px;
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-weight: bold;
+}
+
+.grid{
+	display: grid;
+	align-items: center;
+    grid-template-columns: 100px 2fr 3fr;
+    grid-gap: 100px;
+}
+
+.gridmenu{
+	display: grid;
+	grid-template-columns: auto auto;
+    grid-gap: 100px;
+}
+
+.topdiv{
+    background-image: url(imagens/burguer.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 0%;
+    position: relative;
+    background-size: cover;
+}
+
+.topdiv div{
+    height: 500px;
+    min-height: 400px;
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+/* PAULO N REMOVAS TESTE
+.topdiv div h1{
+    text-align: center;
+    margin-bottom: 5px;
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-weight: bold;
+}
+*/
+
+.bottomdiv{
+    background-color: #000000;
+    padding: 25px 50px;
+    color: white;
+}
