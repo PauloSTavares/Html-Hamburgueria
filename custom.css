@@ -45,9 +45,10 @@ h1{
 }
 
 .gridmenu{
+    text-align: center;
 	display: grid;
 	grid-template-columns: auto auto;
-    grid-gap: 100px;
+    grid-gap: 50px;
 }
 
 .topdiv{
