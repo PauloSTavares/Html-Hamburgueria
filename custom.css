@@ -37,6 +37,11 @@ h1{
     font-weight: bold;
 }
 
+button{
+    width: 50%;
+    height: 75%;
+}
+
 .grid{
 	display: grid;
 	align-items: center;
@@ -47,7 +52,7 @@ h1{
 .gridmenu{
     text-align: center;
 	display: grid;
-	grid-template-columns: auto auto;
+	grid-template-columns: 50% 50%;
     grid-gap: 50px;
 }
 
@@ -65,20 +70,95 @@ h1{
     padding-top: 150px;
     padding-bottom: 150px;
 }
-/* PAULO N REMOVAS TESTE
-.topdiv div h1{
-    text-align: center;
-    margin-bottom: 5px;
-    padding-left: 2px;
-    padding-right: 2px;
-    padding-top: 2px;
-    padding-bottom: 2px;
-    font-weight: bold;
-}
-*/
 
 .bottomdiv{
     background-color: #000000;
     padding: 25px 50px;
     color: white;
 }
+
+.marqueeMenu{
+    width: 50%;
+    height: 100%;
+    --widthMarqueImg: width;
+}
+
+.marqueeMenu span{
+    width: var(--widthMarqueImg);
+    height: auto;
+}
+
+.Body{
+    margin: 0 auto;
+    padding-left: calc(50vw - 50%);
+    padding-right: calc(50vw - 50%);
+    min-height: 40px;
+    max-width: 1200px;
+    width: 90vw;
+}
+
+.nodots{
+    list-style-type: none;
+}
+
+.topbottomPadding{
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.bottomMargin{
+    margin-bottom: 10px;
+}
+
+.hero1{
+    background-color: #ededed!important;
+    height: 100%;
+}
+
+.hero1 .container{
+    grid-template-columns: 4fr 5fr;
+}
+
+.hero0{
+    height: 100%;
+}
+
+.hero0 .container{
+    grid-template-columns: 5fr 4fr;
+}
+
+.container{
+    max-width: 1140px;
+    display: grid;
+    grid-gap: 50px;
+    padding: 4rem;
+    padding-right: calc(-.5 * 1.5rem);
+    padding-left: calc(-.5 * 1.5rem);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* Footer link color*/
+footer a:link {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+footer a:visited {
+    color: gray;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    color: white;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  
+  footer a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+  }
