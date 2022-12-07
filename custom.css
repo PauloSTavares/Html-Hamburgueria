@@ -49,11 +49,20 @@ button{
     grid-gap: 100px;
 }
 
+@media screen and (max-width: 910px) {
+    .grid{
+        display: grid;
+        align-items: center;
+        grid-template-columns: 100px 2fr;
+        grid-gap: 20px;
+    }
+}
+
 .gridmenu{
     text-align: center;
 	display: grid;
 	grid-template-columns: 50% 50%;
-    grid-gap: 50px;
+    padding: 0;
 }
 
 .topdiv{
@@ -80,12 +89,14 @@ button{
 .marqueeMenu{
     width: 50%;
     height: 100%;
-    --widthMarqueImg: width;
 }
 
 .marqueeMenu span{
-    width: var(--widthMarqueImg);
-    height: auto;
+    display: inline-block;
+}
+
+.marqueeMenu span p{
+    text-align: center;
 }
 
 .Body{
@@ -117,6 +128,7 @@ button{
 
 .hero1 .container{
     grid-template-columns: 4fr 5fr;
+    text-align: right;
 }
 
 .hero0{
@@ -125,6 +137,11 @@ button{
 
 .hero0 .container{
     grid-template-columns: 5fr 4fr;
+    text-align: left;
+}
+
+.container h1{
+    text-align: inherit;
 }
 
 .container{
