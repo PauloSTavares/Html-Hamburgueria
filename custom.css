@@ -6,7 +6,7 @@ body {
 }
 
 header {
-    background-color: #f2f2f2;
+    background-color: white;
     padding: 25px 50px;
     position: sticky;
     top: 0;
@@ -41,6 +41,10 @@ h1 {
 button {
     width: 50%;
     height: 75%;
+}
+
+span {
+    display: inline-block;
 }
 
 .grid {
@@ -95,30 +99,6 @@ button {
     background-color: #000000;
     padding: 25px 50px;
     color: white;
-}
-
-.marqueeMenu {
-    width: 95%;
-    height: 100%;
-}
-
-span {
-    display: inline-block;
-}
-
-.marqueeMenu span p {
-    text-align: center;
-}
-
-
-.marqueeMenu img {
-    max-width: 400px;
-    width: 40vw;
-    height: 100%;
-}
-
-.marqueeMenu p {
-    line-height: 1px;
 }
 
 .Body {
@@ -231,4 +211,8 @@ footer a:active {
     width: 95%;
     margin-left: auto;
     margin-right: auto;
+}
+
+.marquee__content p {
+    line-height: 1px;
 }
