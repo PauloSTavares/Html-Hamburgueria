@@ -11,7 +11,24 @@ header {
     position: sticky;
     top: 0;
     z-index: 9999;
+    color: gray;
 }
+
+    header a:link {
+        color: inherit;
+    }
+
+    header a:visited {
+        color: inherit;
+    }
+
+    header a:hover {
+        color: black;
+    }
+
+    header a:active {
+        color: #0000FF;
+    }
 
 img {
     width: 32vw;
@@ -26,6 +43,11 @@ nav li {
         padding-left: 15px;
         padding-right: 15px;
     }
+
+
+a {
+    text-decoration: none;
+}
 
 h1 {
     margin: 0;
@@ -95,12 +117,6 @@ span {
         padding-bottom: 150px;
     }
 
-.bottomdiv {
-    background-color: #000000;
-    padding: 25px 50px;
-    color: white;
-}
-
 .Body {
     margin: 0 auto;
     padding-left: calc(50vw - 50%);
@@ -151,28 +167,28 @@ span {
     margin-left: auto;
 }
 
-/* Footer link color*/
-footer a:link {
-    color: white;
-    background-color: transparent;
-    text-decoration: none;
-}
-
-footer a:visited {
+footer {
     color: gray;
-    background-color: transparent;
-    text-decoration: none;
+    background-color: #000000;
+    padding: 25px 50px;
 }
+/* Footer link color*/
 
-footer a:hover {
-    color: white;
-    background-color: transparent;
-}
+    footer a:link {
+        color: inherit;
+    }
 
-footer a:active {
-    color: yellow;
-    background-color: transparent;
-}
+    footer a:visited {
+        color: inherit;
+    }
+
+    footer a:hover {
+        color: white;
+    }
+
+    footer a:active {
+        color: yellow;
+    }
 
 /*-----------------------------------------*/
 .marquee {
