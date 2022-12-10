@@ -1,6 +1,8 @@
 body {
     font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif;
     margin: 0;
+    min-height: 100vh;
+    background-color: Ivory;
 }
 
 header {
@@ -45,16 +47,26 @@ button{
 .grid{
 	display: grid;
 	align-items: center;
-    grid-template-columns: 100px 2fr 3fr;
-    grid-gap: 100px;
+    grid-template-columns: 5fr 1fr;
 }
 
-@media screen and (max-width: 910px) {
+.nounderline{
+    text-decoration: none;
+}
+
+.grid img{
+    width: 150px;
+    vertical-align: middle;
+}
+
+@media screen and (max-width: 780px) {
     .grid{
-        display: grid;
         align-items: center;
-        grid-template-columns: 100px 2fr;
-        grid-gap: 20px;
+        grid-template-columns: 1fr;
+    }
+
+    nav{
+        text-align: -webkit-center;
     }
 }
 
@@ -87,16 +99,27 @@ button{
 }
 
 .marqueeMenu{
-    width: 50%;
+    width: 95%;
     height: 100%;
 }
 
-.marqueeMenu span{
+span{
     display: inline-block;
 }
 
 .marqueeMenu span p{
     text-align: center;
+}
+
+
+.marqueeMenu img{
+    max-width: 400px;
+    width: 40vw;
+    height: 100%;
+}
+
+.marqueeMenu p{
+    line-height: 1px;
 }
 
 .Body{
@@ -128,7 +151,6 @@ button{
 
 .hero1 .container{
     grid-template-columns: 4fr 5fr;
-    text-align: right;
 }
 
 .hero0{
@@ -137,11 +159,6 @@ button{
 
 .hero0 .container{
     grid-template-columns: 5fr 4fr;
-    text-align: left;
-}
-
-.container h1{
-    text-align: inherit;
 }
 
 .container{
@@ -178,4 +195,60 @@ footer a:visited {
     color: yellow;
     background-color: transparent;
     text-decoration: underline;
+  }
+
+
+  /*----------------------------*/
+  .marquee-wrapper{
+    text-align:center;
+    padding: 10px;
+    
+  }
+  .marquee-wrapper .container{
+    overflow:hidden;
+  }
+  .marquee-inner span{
+    float:right;
+    width:50%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .marquee-wrapper .marquee-block{
+    height: 150px;
+    width: 200%;
+    overflow: hidden;
+    box-sizing: border-box;
+    position: relative;
+    margin: 0;
+    padding: 0;
+  }
+  .marquee-inner{
+    display: block;
+    width: 100%;
+    position: absolute;
+  }
+  .marquee-inner p{
+    font-weight: 800;
+    font-size: 30px;
+    font-family: cursive;
+  }
+  .marquee-inner.to-left{
+    animation: marqueeLeft 10s linear infinite;
+  }
+  
+  .marquee-item{
+    width: auto;
+    height: auto;
+    display: inline-block;
+    margin: 0 10px;
+    float: right;
+    transition: all .2s ease-out;
+  }
+  @keyframes marqueeLeft{
+    0% {
+      left: 0;
+    }
+    50% {
+      left: -100%;
+    }
   }
