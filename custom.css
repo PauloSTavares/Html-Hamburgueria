@@ -12,24 +12,23 @@ header {
     top: 0;
     z-index: 9999;
 }
-	
-img{
-	width: 100%;
+
+img {
+    width: 32vw;
     height: auto;
 }
 
-nav li{
-	display: table-cell;
+nav li {
+    display: table-cell;
 }
 
-nav li *{
-	padding-left: 15px;
-    padding-right: 15px;
-}
+    nav li * {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 
-h1{
+h1 {
     margin: 0;
-    /*teste*/
     text-align: center;
     margin-bottom: 5px;
     padding-left: 2px;
@@ -39,45 +38,45 @@ h1{
     font-weight: bold;
 }
 
-button{
+button {
     width: 50%;
     height: 75%;
 }
 
-.grid{
-	display: grid;
-	align-items: center;
+.grid {
+    display: grid;
+    align-items: center;
     grid-template-columns: 5fr 1fr;
 }
 
-.nounderline{
+.nounderline {
     text-decoration: none;
 }
 
-.grid img{
+.grid img {
     width: 150px;
     vertical-align: middle;
 }
 
 @media screen and (max-width: 780px) {
-    .grid{
+    .grid {
         align-items: center;
         grid-template-columns: 1fr;
     }
 
-    nav{
+    nav {
         text-align: -webkit-center;
     }
 }
 
-.gridmenu{
+.gridmenu {
     text-align: center;
-	display: grid;
-	grid-template-columns: 50% 50%;
+    display: grid;
+    grid-template-columns: 50% 50%;
     padding: 0;
 }
 
-.topdiv{
+.topdiv {
     background-image: url(imagens/burguer.jpg);
     background-repeat: no-repeat;
     background-position: 50% 0%;
@@ -85,44 +84,44 @@ button{
     background-size: cover;
 }
 
-.topdiv div{
-    height: 500px;
-    min-height: 400px;
-    padding-top: 150px;
-    padding-bottom: 150px;
-}
+    .topdiv div {
+        height: 500px;
+        min-height: 400px;
+        padding-top: 150px;
+        padding-bottom: 150px;
+    }
 
-.bottomdiv{
+.bottomdiv {
     background-color: #000000;
     padding: 25px 50px;
     color: white;
 }
 
-.marqueeMenu{
+.marqueeMenu {
     width: 95%;
     height: 100%;
 }
 
-span{
+span {
     display: inline-block;
 }
 
-.marqueeMenu span p{
+.marqueeMenu span p {
     text-align: center;
 }
 
 
-.marqueeMenu img{
+.marqueeMenu img {
     max-width: 400px;
     width: 40vw;
     height: 100%;
 }
 
-.marqueeMenu p{
+.marqueeMenu p {
     line-height: 1px;
 }
 
-.Body{
+.Body {
     margin: 0 auto;
     padding-left: calc(50vw - 50%);
     padding-right: calc(50vw - 50%);
@@ -131,37 +130,37 @@ span{
     width: 90vw;
 }
 
-.nodots{
+.nodots {
     list-style-type: none;
 }
 
-.topbottomPadding{
+.topbottomPadding {
     padding-top: 70px;
     padding-bottom: 70px;
 }
 
-.bottomMargin{
+.bottomMargin {
     margin-bottom: 10px;
 }
 
-.hero1{
-    background-color: #ededed!important;
+.hero1 {
+    background-color: #ededed !important;
     height: 100%;
 }
 
-.hero1 .container{
-    grid-template-columns: 4fr 5fr;
-}
+    .hero1 .container {
+        grid-template-columns: 4fr 5fr;
+    }
 
-.hero0{
+.hero0 {
     height: 100%;
 }
 
-.hero0 .container{
-    grid-template-columns: 5fr 4fr;
-}
+    .hero0 .container {
+        grid-template-columns: 5fr 4fr;
+    }
 
-.container{
+.container {
     max-width: 1140px;
     display: grid;
     grid-gap: 50px;
@@ -177,115 +176,59 @@ footer a:link {
     color: white;
     background-color: transparent;
     text-decoration: none;
-  }
-  
+}
+
 footer a:visited {
     color: gray;
     background-color: transparent;
     text-decoration: none;
-  }
-  
-  footer a:hover {
+}
+
+footer a:hover {
     color: white;
     background-color: transparent;
-    text-decoration: underline;
-  }
-  
-  footer a:active {
+}
+
+footer a:active {
     color: yellow;
     background-color: transparent;
-    text-decoration: underline;
-  }
+}
 
-
-  /*----------------------------*/
-  .marquee-wrapper{
-    text-align:center;
-    padding: 10px;
-    
-  }
-  .marquee-wrapper .container{
-    overflow:hidden;
-  }
-  .marquee-inner span{
-    float:right;
-    width:50%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-  }
-  .marquee-wrapper .marquee-block{
-    height: 150px;
-    width: 200%;
-    overflow: hidden;
-    box-sizing: border-box;
+/*-----------------------------------------*/
+.marquee {
     position: relative;
-    margin: 0;
-    padding: 0;
-  }
-  .marquee-inner{
-    display: block;
-    width: 100%;
-    position: absolute;
-  }
-  .marquee-inner p{
-    font-weight: 800;
-    font-size: 30px;
-    font-family: cursive;
-  }
-  .marquee-inner.to-left{
-    animation: marqueeLeft 10s linear infinite;
-  }
-  
-  .marquee-item{
-    width: auto;
-    height: auto;
-    display: inline-block;
-    margin: 0 10px;
-    float: right;
-    transition: all .2s ease-out;
-  }
-  @keyframes marqueeLeft{
-    0% {
-      left: 0;
-    }
-    50% {
-      left: -100%;
-    }
-  }
-
-
-  /*-----------------------------------------*/
-  .marquee {
-    width: 95%px;
-    margin: 0 auto;
+    display: flex;
     overflow: hidden;
-    white-space: nowrap;
-  }
-  .marquee span {
-    display: inline-block;
-    position: relative;
-    left: 100%;
-    animation: marquee 10s linear infinite;
-  }
-  .marquee:hover span {
-    animation-play-state: paused;
-  }
-  
-  .marquee span:nth-child(1) {
-    animation-delay: 0s;
-  }
-  .marquee span:nth-child(2) {
-    animation-delay: 0.8s;
-  }
-  .marquee span:nth-child(3) {
-    animation-delay: 1.6s;
-  }
-  .marquee span:nth-child(4) {
-    animation-delay: 2.4s;
-  }
- 
-  
-  @keyframes marquee {
-    0%   { left: 100%; }
-    100% { left: -100%; }
-  }
+    user-select: none;
+}
+
+    .marquee ul {
+        padding-inline-start: 0;
+    }
+
+.marquee__content {
+    flex-shrink: 0;
+    display: flex;
+    justify-content: space-around;
+    min-width: 100%;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.animation .marquee__content {
+    animation: scroll 14s linear infinite;
+}
+
+.animation {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
