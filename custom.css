@@ -1,3 +1,4 @@
+/*Todas as Paginas*/
 body {
     font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif;
     margin: 0;
@@ -63,11 +64,34 @@ h1 {
 button {
     width: 50%;
     height: 75%;
+    transform: translateY(15%);
 }
 
 span {
     display: inline-block;
 }
+
+footer {
+    color: gray;
+    background-color: #000000;
+    padding: 25px 50px;
+}
+
+    footer a:link {
+        color: inherit;
+    }
+
+    footer a:visited {
+        color: inherit;
+    }
+
+    footer a:hover {
+        color: white;
+    }
+
+    footer a:active {
+        color: yellow;
+    }
 
 .grid {
     display: grid;
@@ -84,6 +108,10 @@ span {
     vertical-align: middle;
 }
 
+.nodots {
+    list-style-type: none;
+}
+
 @media screen and (max-width: 780px) {
     .grid {
         align-items: center;
@@ -93,13 +121,6 @@ span {
     nav {
         text-align: -webkit-center;
     }
-}
-
-.gridmenu {
-    text-align: center;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    padding: 0;
 }
 
 .topdiv {
@@ -117,28 +138,7 @@ span {
         padding-bottom: 150px;
     }
 
-.Body {
-    margin: 0 auto;
-    padding-left: calc(50vw - 50%);
-    padding-right: calc(50vw - 50%);
-    min-height: 40px;
-    max-width: 1200px;
-    width: 90vw;
-}
-
-.nodots {
-    list-style-type: none;
-}
-
-.topbottomPadding {
-    padding-top: 70px;
-    padding-bottom: 70px;
-}
-
-.bottomMargin {
-    margin-bottom: 10px;
-}
-
+/*Pagina Index*/
 .hero1 {
     background-color: #ededed !important;
     height: 100%;
@@ -167,30 +167,14 @@ span {
     margin-left: auto;
 }
 
-footer {
-    color: gray;
-    background-color: #000000;
-    padding: 25px 50px;
+/*Pagina Menu*/
+.gridmenu {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 0;
 }
-/* Footer link color*/
 
-    footer a:link {
-        color: inherit;
-    }
-
-    footer a:visited {
-        color: inherit;
-    }
-
-    footer a:hover {
-        color: white;
-    }
-
-    footer a:active {
-        color: yellow;
-    }
-
-/*-----------------------------------------*/
 .marquee {
     position: relative;
     display: flex;
@@ -231,4 +215,23 @@ footer {
 
 .marquee__content p {
     line-height: 1px;
+}
+
+/*Pagina Contactos*/
+.Body {
+    margin: 0 auto;
+    padding-left: calc(50vw - 50%);
+    padding-right: calc(50vw - 50%);
+    min-height: 40px;
+    max-width: 1200px;
+    width: 90vw;
+}
+
+.topbottomPadding {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.bottomMargin {
+    margin-bottom: 10px;
 }
